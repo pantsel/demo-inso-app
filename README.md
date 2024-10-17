@@ -2,6 +2,12 @@
 
 ## Setup
 
+Clone the repository
+
+```bash
+ $ git clone https://github.com/pantsel/demo-inso-app
+```
+
 Configure the environment
 
 ```bash
