@@ -41,6 +41,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - uses: kong/setup-inso@v1
+        with:
+          inso-version: 10.1.0
+
       # Install Docker Compose
       - name: Install Docker Compose
         run: |
