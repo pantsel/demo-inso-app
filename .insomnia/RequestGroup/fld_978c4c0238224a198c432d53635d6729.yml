@@ -1,0 +1,14 @@
+_id: fld_978c4c0238224a198c432d53635d6729
+type: RequestGroup
+parentId: wrk_fbd15f00f38f4352a277a1c21dff03bf
+modified: 1729144718312
+created: 1729144718312
+name: Transactions
+description: Everything about transactions
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1729144718319
+preRequestScript: null
+afterResponseScript: null
+authentication: null
+headers: null
