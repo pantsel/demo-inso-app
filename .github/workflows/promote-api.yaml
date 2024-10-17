@@ -40,6 +40,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install extra rulesets for Spectral
+        run: |
+          npm install --save -D @stoplight/spectral-owasp-ruleset@^2.0
+
       - name: Lint OpenAPI Specification
         run: |
           inso lint spec "Transactions API of BanKonG 1.1.0"
@@ -47,7 +51,6 @@ jobs:
       - name: Run tests
         run: |
           inso run test "Demo test suite" --env local
-
 
       - name: DeckOps
         run: |
