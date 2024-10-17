@@ -7,7 +7,7 @@ networks:
 
 services:
  
-# BanKonG
+  # BanKonG
   bankong-frontend:
    networks:
    - kong-edu-net
