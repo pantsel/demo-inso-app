@@ -21,7 +21,7 @@ on:
         description: 'API Name'
         type: string
         required: false
-        default: 'petstore'
+        default: 'transactions-api'
       organization:
         description: 'Organization'
         type: string
@@ -82,4 +82,5 @@ jobs:
             --konnect-addr="${{ inputs.konnect_server_url }}" \
             --konnect-token="${{ secrets.KONNECT_PAT }}" \
             --konnect-control-plane-name="${{ inputs.control_plane_name }}"
+
 
