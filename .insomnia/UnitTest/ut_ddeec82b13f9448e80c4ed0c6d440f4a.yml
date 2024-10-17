@@ -1,0 +1,11 @@
+_id: ut_ddeec82b13f9448e80c4ed0c6d440f4a
+type: UnitTest
+parentId: uts_5aec520810a14b95bb4878487a1afab8
+modified: 1729146158428
+created: 1729146096296
+requestId: req_ebf88d7329474ecebe5f5648d04cfd07
+name: Delete transaction
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);
+metaSortKey: -1729145946759

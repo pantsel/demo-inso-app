@@ -1,0 +1,28 @@
+_id: req_87198083c48c4504b768f16f079664d4
+type: Request
+parentId: fld_978c4c0238224a198c432d53635d6729
+modified: 1729144718322
+created: 1729144718322
+url: "{{ _.base_url }}/transactions/{{ _.id }}"
+name: Get specific transactions
+description: Returns a post by id
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: apikey
+  key: apikey
+  value: "{{ _.apikey }}"
+  addTo: header
+preRequestScript: null
+metaSortKey: -1729144718322
+isPrivate: false
+pathParameters: null
+afterResponseScript: null
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
