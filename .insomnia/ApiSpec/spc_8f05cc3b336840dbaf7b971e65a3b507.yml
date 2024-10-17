@@ -1,7 +1,7 @@
 _id: spc_8f05cc3b336840dbaf7b971e65a3b507
 type: ApiSpec
 parentId: wrk_fbd15f00f38f4352a277a1c21dff03bf
-modified: 1729144543669
+modified: 1729181566165
 created: 1729144543657
 fileName: Transactions API of BanKonG 1.1.0
 contents: >-
@@ -22,17 +22,19 @@ contents: >-
       email: support@bankong.com
 
   servers: 
-    - url: http://transactions.bankong.local
+    - url: http://localhost:3000
       description: local sandbox environment
       x-internal: true
     - url: http://api.transactions.k8s.orb.local
       description: base url via gateway in k8s
       x-internal: false
 
+
     
   security:
     - ApiKeyAuth: [] 
     - OIDC: []
+
 
     
   tags:
@@ -41,6 +43,7 @@ contents: >-
     description: Everything about transactions
     externalDocs:
       url: http://docs.bankong.com/transations
+
 
     
   paths:
