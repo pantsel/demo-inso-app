@@ -1,8 +1,8 @@
-_id: req_3ec76792f72f4ce9b222c9bb45691d83
+_id: req_61e4000a184a40469c9bae4e52cb1370
 type: Request
-parentId: fld_978c4c0238224a198c432d53635d6729
-modified: 1729144718323
-created: 1729144718323
+parentId: fld_165f3ee908d9442594b37453c782c4a7
+modified: 1740478000196
+created: 1740478000196
 url: "{{ _.base_url }}/transactions/{{ _.id }}"
 name: Update a transaction
 description: Change a transaction
@@ -30,7 +30,7 @@ authentication:
   value: "{{ _.apikey }}"
   addTo: header
 preRequestScript: null
-metaSortKey: -1729144718323
+metaSortKey: -1740478000196
 isPrivate: false
 pathParameters: null
 afterResponseScript: null

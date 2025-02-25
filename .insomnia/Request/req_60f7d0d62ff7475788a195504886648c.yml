@@ -1,8 +1,8 @@
-_id: req_9f99c70dcfe64e0e82ee9b6dd13f22f4
+_id: req_60f7d0d62ff7475788a195504886648c
 type: Request
-parentId: fld_978c4c0238224a198c432d53635d6729
-modified: 1729144718322
-created: 1729144718322
+parentId: fld_165f3ee908d9442594b37453c782c4a7
+modified: 1740478000195
+created: 1740478000195
 url: "{{ _.base_url }}/transactions"
 name: Create new transaction
 description: Initiate a transaction
@@ -30,7 +30,7 @@ authentication:
   value: "{{ _.apikey }}"
   addTo: header
 preRequestScript: null
-metaSortKey: -1729144718322
+metaSortKey: -1740478000195
 isPrivate: false
 pathParameters: null
 afterResponseScript: null

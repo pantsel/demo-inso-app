@@ -1,9 +1,9 @@
 _id: ut_fa2e110cbaae44ada9b3e0502ed3dd2e
 type: UnitTest
 parentId: uts_5aec520810a14b95bb4878487a1afab8
-modified: 1729146199310
+modified: 1740478164574
 created: 1729145946758
-requestId: req_9f99c70dcfe64e0e82ee9b6dd13f22f4
+requestId: req_60f7d0d62ff7475788a195504886648c
 name: Creates a new transaction
 code: |-
   const response1 = await insomnia.send();
