@@ -85,32 +85,32 @@ paths:
                 $ref: "#/components/schemas/Transaction"
         "404":
           description: Transaction not found
-    patch:
-      description: Change a transaction
-      summary: Update a transaction
-      tags: ["Transactions"]
-      operationId: "changeTransaction"
-      requestBody:
-        content:
-          application/json; charset=utf-8:
-            schema:
-              $ref: "#/components/schemas/Transaction"
-      parameters:
-        - name: id
-          in: path
-          required: true
-          description: The transaction id.
-          schema:
-            $ref: "#/components/schemas/TransactionId"
-      responses:
-        "200":
-          description: Transaction changed
-          content:
-            "application/json":
-              schema:
-                $ref: "#/components/schemas/Transaction"
-        "404":
-          description: Transaction not found
+    # patch:
+    #   description: Change a transaction
+    #   summary: Update a transaction
+    #   tags: ["Transactions"]
+    #   operationId: "changeTransaction"
+    #   requestBody:
+    #     content:
+    #       application/json; charset=utf-8:
+    #         schema:
+    #           $ref: "#/components/schemas/Transaction"
+    #   parameters:
+    #     - name: id
+    #       in: path
+    #       required: true
+    #       description: The transaction id.
+    #       schema:
+    #         $ref: "#/components/schemas/TransactionId"
+    #   responses:
+    #     "200":
+    #       description: Transaction changed
+    #       content:
+    #         "application/json":
+    #           schema:
+    #             $ref: "#/components/schemas/Transaction"
+    #     "404":
+    #       description: Transaction not found
     delete:
       description: Cancel a transaction
       summary: Cancel a transaction
