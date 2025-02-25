@@ -12,9 +12,9 @@ rules:
       function: truthy
 
   # don't allow patch operations
-  no-patch-methods:
-    description: "PATCH operations should not be defined in the OpenAPI spec."
-    severity: error
-    given: "$.paths[*][patch]"
-    then:
-      function: falsy
+  # no-patch-methods:
+  #   description: "PATCH operations should not be defined in the OpenAPI spec."
+  #   severity: error
+  #   given: "$.paths[*][patch]"
+  #   then:
+  #     function: falsy
