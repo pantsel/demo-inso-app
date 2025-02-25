@@ -2,15 +2,28 @@ extends:
   - "spectral:oas" 
   - "@stoplight/spectral-owasp-ruleset"
 
-# rules:
-#   operation-id-required:
-#     description: "Every OpenAPI operation must have an operationId specified."
-#     message: "Operation object is missing operationId."
-#     severity: error
-#     given: "$.paths[*][*]"
-#     then:
-#       field: operationId
-#       function: truthy
+rules:
+  operation-id-required:
+    description: "Every OpenAPI operation must have an operationId specified."
+    message: "Operation object is missing operationId."
+    severity: error
+    given: "$.paths[*][*]"
+    then:
+      field: operationId
+      function: truthy
+
+  # don't allow patch operations
+  operation-no-patch:
+    description: "Don't allow PATCH operations."
+    message: "PATCH operations are not allowed."
+    severity: error
+    given: "$.paths[*][*]"
+    then:
+      field: operation
+      function: pattern
+      functionOptions:
+        notMatch: "patch"
+        match: "^(?!.*patch).*$"
   
   # OWASP API Security
   # Overwrite default severity to warn just for demo purposes
