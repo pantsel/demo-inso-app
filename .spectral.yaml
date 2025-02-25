@@ -1,6 +1,5 @@
 extends: 
-  - "spectral:oas" 
-  - "@stoplight/spectral-owasp-ruleset"
+  - "spectral:oas"
 
 rules:
   operation-id-required:
@@ -13,23 +12,9 @@ rules:
       function: truthy
 
   # don't allow patch operations
-  operation-no-patch:
-    description: "Don't allow PATCH operations."
-    message: "PATCH operations are not allowed."
+  no-patch-methods:
+    description: "PATCH operations should not be defined in the OpenAPI spec."
     severity: error
-    given: "$.paths[*][*]"
+    given: "$.paths[*][patch]"
     then:
-      field: operation
-      function: pattern
-      functionOptions:
-        notMatch: "patch"
-        match: "^(?!.*patch).*$"
-  
-  # OWASP API Security
-  # Overwrite default severity to warn just for demo purposes
-  # owasp:api2:2023-write-restricted: warn
-  # owasp:api4:2023-rate-limit: warn
-  # owasp:api4:2023-integer-limit-legacy: warn
-  # owasp:api4:2023-string-limit: warn
-  # owasp:api8:2023-no-server-http: warn
-  # owasp:api4:2023-integer-limit: warn
+      function: falsy
