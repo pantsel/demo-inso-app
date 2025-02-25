@@ -66,3 +66,4 @@ docker/*.deb
 */.vscode/
 */.DS_Store
 */.tmp/
+deploy-dp.sh
