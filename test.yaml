@@ -84,7 +84,6 @@ collection:
             }
         headers:
           - name: Content-Type
-            disabled: false
             value: application/json
         authentication:
           type: apikey
@@ -123,7 +122,6 @@ collection:
             }
         headers:
           - name: Content-Type
-            disabled: false
             value: application/json
         authentication:
           type: apikey
