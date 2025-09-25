@@ -3,7 +3,7 @@ name: Transactions API of BanKonG 1.1.0
 meta:
   id: wrk_fbd15f00f38f4352a277a1c21dff03bf
   created: 1729144543656
-  modified: 1729144543656
+  modified: 1758784395863
   description: ""
 collection:
   - name: Transactions
@@ -422,7 +422,7 @@ spec:
   meta:
     id: spc_8f05cc3b336840dbaf7b971e65a3b507
     created: 1729144543657
-    modified: 1729144543669
+    modified: 1758784395862
 testSuites:
   - name: Demo test suite
     meta:
